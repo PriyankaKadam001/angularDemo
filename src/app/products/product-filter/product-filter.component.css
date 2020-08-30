@@ -1,0 +1,6 @@
+.list-group-item.active a{
+    color:#fff;
+}
+.sticky-top {
+    top: 80px;
+}

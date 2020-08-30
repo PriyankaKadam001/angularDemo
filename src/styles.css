@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+.marginRight15{
+    margin-right: 15px;
+}
+.padding0{
+    padding: 0px;
+}
