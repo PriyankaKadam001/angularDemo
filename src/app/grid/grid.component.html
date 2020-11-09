@@ -1,0 +1,12 @@
+<div class="p-datatable-wrapper" *ngIf="!scrollable">
+    <table role="grid" #table [ngClass]="tableStyleClass" [ngStyle]="tableStyle">
+        <ng-container *ngTemplateOutlet="colGroupTemplate; context {$implicit: columns}"></ng-container>
+        <thead class="p-datatable-thead">
+            <ng-container *ngTemplateOutlet="headerTemplate; context: {$implicit: columns}"></ng-container>
+        </thead>
+        <tbody class="p-datatable-tbody" [pTableBody]="columns" [pTableBodyTemplate]="bodyTemplate"></tbody>
+        <tfoot *ngIf="footerTemplate" class="p-datatable-tfoot">
+            <ng-container *ngTemplateOutlet="footerTemplate; context {$implicit: columns}"></ng-container>
+        </tfoot>
+    </table>
+</div>
